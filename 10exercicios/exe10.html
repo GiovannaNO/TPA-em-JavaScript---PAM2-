@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h2 class="header">Exercício 10</h2>
+            <form class="formulario">
+              <input type="number" id="vl1" class="campo" placeholder="1º número">
+              <input type="number" id="vl2" class="campo" placeholder="2º número">
+              <input type="number" id="vl3" class="campo" placeholder="3º número">
+              <input type="number" id="vl4" class="campo" placeholder="4º número">
+              <input type="number" id="vl5" class="campo" placeholder="5º número">
+              <p id="batata"></p>
+              <input type="submit" class="botao" value="enviar" onclick="enviar()">
+            </form>
+            <script>
+                function enviar(){
+                    var vl1 = document.getElementById('vl1');
+                    var vl1 = parseInt(vl1.value);
+                    var vl2 = document.getElementById('vl2');
+                    var vl2 = parseInt(vl2.value);
+                    var vl3 = document.getElementById('vl3');
+                    var vl3 = parseInt(vl3.value);
+                    var vl4 = document.getElementById('vl4');
+                    var vl4 = parseInt(vl4.value);
+                    var vl5 = document.getElementById('vl5');
+                    var vl5 = parseInt(vl5.value);
+            
+                    var soma = vl1 + vl2 + vl3 + vl4 + vl5;
+                    vl1 = vl1 * vl1;
+                    vl2 = vl2 * vl2;
+                    vl3 = vl3 * vl3;
+                    vl4 = vl4 * vl4;
+                    vl5 = vl5 * vl5;
+    
+                    alert(vl1 + "; " + vl2 + "; " + vl3 + "; " + vl4 + "; " + vl5 + "; Soma: " + soma);
+                }
+            </script>
+            <div class="prox">  
+              <a class="link" href="#">- Próximo exercício -</a>
+            </div>
+        </div>        
+    </main>
+</body>
+</html>

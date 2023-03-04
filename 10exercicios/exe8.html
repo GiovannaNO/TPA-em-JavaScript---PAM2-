@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h2 class="header">Exercício 8</h2>
+            <form class="formulario">
+              <input type="text" id="num" class="campo" name="numero" placeholder="digite um número">
+              <p id="batata"></p>
+              <input type="submit" class="botao" value="enviar" onclick="enviar()">
+            </form>
+            <script>
+                function enviar(){
+                    var number = document.getElementById('num');
+                    var num = parseInt(number.value);
+                    if (num%5 == 0) {
+                        alert(num + " é multiplo de 5.");
+                    }else{
+                        alert(num + " não é multiplo de 5.");
+                    }
+                }
+            </script>
+            <div class="prox">  
+              <a class="link" href="exe9.html">- Próximo exercício -</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
